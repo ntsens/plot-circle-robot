@@ -6,6 +6,8 @@ let r = 20
 let n = 20
 let x_offset = 100
 let y_offset = 100
+// 准备
+writingrobot.moveXYZ(x_offset, y_offset, 0)
 while (index <= n) {
     y = r * Math.sin(index / n * 2 * Math.PI)
     x = r * Math.cos(index / n * 2 * Math.PI)
@@ -16,7 +18,7 @@ while (index <= n) {
     index += 1
 }
 // 归位
-basic.pause(5000)
+basic.pause(4000)
 writingrobot.autoHome()
 basic.forever(function () {
 	
