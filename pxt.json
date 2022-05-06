@@ -5,7 +5,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "writingrobot": "github:ntsens/wrobot-makecode-packages#3e37d5882867db0a1e458c981c2ef27cb9b5ea15"
     },
     "files": [
         "README.md",
