@@ -13,12 +13,12 @@ while (index <= n) {
     x = r * Math.cos(index / n * 2 * Math.PI)
     x = x + x_offset
     y = y + y_offset
-    basic.pause(100)
+    basic.pause(200)
     writingrobot.moveXYZunblock(x, y, -32)
     index += 1
 }
 // 归位
-basic.pause(4000)
+writingrobot.moveXYZ(x_offset, y_offset, 0)
 writingrobot.autoHome()
 basic.forever(function () {
 	
